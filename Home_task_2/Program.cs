@@ -7,7 +7,10 @@ int SecondNumber(int num)
 }
 Console.WriteLine("Input number bitween 100 and 999:");
 int num = Convert.ToInt32(Console.ReadLine());
-
+if (num>999 || num<100)
+{
+    Console.WriteLine("It's not correct number, but answer is: ");
+}
 Console.WriteLine("second number is " + SecondNumber(num));
 */
 
