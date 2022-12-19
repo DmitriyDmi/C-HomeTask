@@ -17,11 +17,32 @@ Console.WriteLine("second number is " + SecondNumber(num));
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 /*
+// Для 3й цифры слева
 int Third(int num)
 {
-    int third = Math.Abs(num / 100) % 10;
-    return third;
+    while(num/1000>=1 || num/1000<=-1)
+    {
+        num = num / 10;
+    }
+    if (num>0)
+    {
+        int third = num % 10;
+        return third;
+    }
+    else
+    {
+        int third = -1 * num % 10;
+        return third;
+    }
 }
+
+// Для 3й цифры справа
+// int Third(int num)
+// {
+//     int third = Math.Abs(num / 100) % 10;
+//     return third;
+// }
+
 Console.WriteLine("Input number :");
 int num = Convert.ToInt32(Console.ReadLine());
 
