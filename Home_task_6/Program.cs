@@ -39,4 +39,5 @@ else
     y = k2 * x + b2;
     Console.WriteLine($"Точка пересечения: ({x};{y})");
 }
+
 */
